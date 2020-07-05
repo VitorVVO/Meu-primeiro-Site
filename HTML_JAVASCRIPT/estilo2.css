@@ -1,32 +1,41 @@
 @charset "Utf-8";
 body{
-    background-image: url("fundo.jpg");
+    background-image: url("fundodark.jpg");
     background-color:whitesmoke;
     color: black;
     font: normal 14pt Arial;
 }
+
 h1{
     font-family: Arial;
     font-size: 30pt;
-    color: rgb(13, 13, 180);
+    color: rgb(177, 19, 19);
     text-shadow: 3px 3px 3px gray;
 }
+
 h2{
     font-family: Arial;
     font-size: 18pt;
+    color: whitesmoke;
 }
+
+
 h3{
     font-family: Arial;
     font-size: 12pt;
+    color: whitesmoke;
 }
+
+
 p{
     text-align: justify;
     text-indent: 50px;
+    color: whitesmoke;
 }
 
 /*formatção cabecalho*/
 header#cabecalho{
-    border-bottom: 2px black solid;
+    border-bottom: 2px whitesmoke solid;
 }
 
 header#cabecalho h1{
@@ -249,6 +258,7 @@ iframe#frame-spec{
 
 
 
+
 /*formatção menu*/
 nav#menu{
     display: block;
@@ -309,7 +319,7 @@ nav#menu h4:hover{
 div#interface{
     width: 1000px;
     margin: 0px auto 0px auto;
-    box-shadow: 0px 0px 10px rgba(0,0,0,.4);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
     padding: 10px 10px 10px 10px;
 }
 
@@ -321,7 +331,7 @@ section#corpo{
     width: 660px;
     float: left;
     padding: 10px;
-    border-right: 2px black solid;
+    border-right: 2px whitesmoke solid;
 }
 
 section#corpo h3{
@@ -345,30 +355,91 @@ aside#lateral{
     padding: 10px;
 }
 
-/*formatação do rodape*/
-footer#rodape{
-    clear:both;
-    border-top: 2px black solid;
-}
-
-footer#rodape h3{
-    text-align: center;
-}
-
 div#interfaceLateral{
     width: 280px;
     margin: 0px auto 0px auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,.4);
-    background-color: rgb(165, 161, 161);
+    background-color: rgb(61, 57, 57);
     padding: 10px 10px 10px 10px;
 }
 
 div#interfaceLateral h1{
-    background-color: rgb(51, 50, 50);
+    background-color: rgb(114, 110, 110);
     color: white;
     font-size: 21pt;
     text-shadow: none;
 }
 
 
+/*formatação do rodape*/
+footer#rodape{
+    clear:both;
+    border-top: 2px whitesmoke solid;
+}
+
+footer#rodape h3{
+    text-align: center;
+}
+
+
+
+/*formatção menu Sobre min
+nav#menu1{
+    display: block;
+}
+
+nav#menu1 h1{
+    position: relative;
+    top:-520px;
+    left:600px;
+}
+
+nav#menu1 ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+    top:-600px;
+    left:900px;
+}
+
+nav#menu1 li{
+    display: inline-block;
+    background-color: cadetblue;
+    padding: 10px;
+    margin: 4px;
+}
+
+nav#menu1 li:hover{
+    background-color: #606060;
+}
+
+/*formatção menu fotos
+nav#menu2{
+    display: block;
+}
+
+nav#menu2 h1{
+    position: relative;
+    top:-1276px;
+    left:600px;
+}
+
+nav#menu2 ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+    top:-1356px;
+    left:900px;
+}
+
+nav#menu2 li{
+    display: inline-block;
+    background-color: cadetblue;
+    padding: 10px;
+    margin: 4px;
+}
+
+nav#menu2 li:hover{
+    background-color: #606060;
+}
 

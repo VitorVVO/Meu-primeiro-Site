@@ -4,54 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitor's 1st Site</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link id="link" rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
+<div id="interface">
 
-    <div id="interface2">
+    <header id="cabecalho">
+        <hgroup>   <!-- é apenas um agrupamento para organização-->
+            <h1> Vitor's 1st Site!!!</h1>
+            <h3>Fotos section</h3>
+        </hgroup>
 
-        <header id="cabecalho2">
+        <p>Uma seção dedicada para todas as fotos do site.</p>
 
-            <hgroup>   <!-- é apenas um agrupamento para organização-->
-                <h1> &nbsp Vitor's 1st Site!!!</h1>
-                <h3>Fotos section</h3>
-            </hgroup>
+    <nav id="menu">
+        <h1>Menu Principal:</h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="sobreMim.html">Sobre Mim</a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+            <li onclick="mudaBackgorund()"><h4>Dark Mode</h4></li>
+        </ul>    
+    </nav>
+    </header>
 
-            <p>Uma seção dedicada para todas as fotos do site.</p>
+<section id="sectionPainelFotos">
+    <h2>Um painel que contem todas as imagens utilizadas no site:</h2>
+    <figure class="painelFotos">
+        <img id = "painelDeFotos" src = "httpSite.jpg" usemap="#painel">
+        <map name="painel" >
+            <area id="AreaDir" class="painelArea" shape="rect" coords="630,0,900,520" onclick="addpainel()">
+            <area id="AreaEsq" class="painelArea" shape="rect" coords="0,0,270,520" onclick="subpainel()">
+        </map>
+    </figure>
+    <h3>clique na esqueda ou direita do painel para alterar as imagens</h3>
+</section>
 
-            <figure class= "foto1">
-                <img src = "httpSite.jpg" >
-                <figcaption>
-                    <h2> HTTP (Hypertext Transfer Protocol) é um protocolo de requisição e resposta e possibilita que as pessoas que inserem a URL do seu site na Web possam ter acesso aos conteúdos e dados que nele existem.O termo foi cunhado por Ted Nelson em 1965. </h2>
-                </figcaption>
-            </figure>
-            
-            <figure class= "foto2">
-                <img src = "unb.png" >
-                <figcaption>
-                    <h2> UNB onde faço Cic </h2>
-                </figcaption>
-            </figure>
-            <br>
-            <br>
-            <figure class= "foto3">
-                <img src = "lunaMeg.jpeg" >
-                <figcaption>
-                    <h2> Luna & Meg  </h2>
-                </figcaption>
-            </figure>
-        
-        <nav id="menu2">
-            <h1>Menu Principal:</h1>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="sobreMim.html">Sobre Mim</a></li>
-                <li><a href="fotos.html">Fotos</a></li>
-            </ul>    
-        </nav>
+<footer id="rodape">
+    <h3> Copyright &copy; 2020 - by Vitor Vasconcelos de Oliveira</h3>
+    <h3> vitorvasconcelos05062000@gmail.com</h3>
+</footer>
 
-        </header>
-    </div>
-    
+</div>
+
+<script src="javascript.js"> // script em javascript ou outra linguagem
+    document.write(Date());
+</script>
 </body>
 </html>
